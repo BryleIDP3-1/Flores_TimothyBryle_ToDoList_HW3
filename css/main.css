@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    /* background-color:black; */
+    /* These properties will be inherited by the children element */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-image: url(../images/pinboard-texture-1.jpg);
+}
+
+#header-title {
+    width: 700px;
+    display: block;
+    margin: 0 auto; /*margin top and bottom, 0. margin left and right auto */
+    /* box-shadow: -3px 3px 10px rgba(0,0,0,.5); */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    /* flex wrap lets them stack when desktop squeezed */
+    /* without it the items will distort */
+}
+
+article {
+    width: 279px;
+    height: 520px;
+    /* border: 4px solid white; */
+    /* border-radius: 8px; */
+    /* margin: 10px; */
+    text-align: left;
+    margin: 20px;
+}
+
+article h2 {
+    color: black;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    /*padding: 4px 8px;    top and bottom left and right; */
+}
+
+/* article:first-of-type {
+    border: 4px solid gray;
+} */
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+ul li {
+    padding: 6px 8px;
+}
+
+#todo {
+   
+    background-image: url(../images/1-todo-bg.png);
+    background-repeat: no-repeat;
+
+}
+
+#inprogress {
+    
+    background-image: url(../images/2-progress-bg.png);
+    background-repeat: no-repeat;
+}
+
+#done {
+    background-image: url(../images/3-done-bg.png);
+    background-repeat: no-repeat;
+}
+
+.todo li:nth-child(odd) { 
+    background-color: rgba(255, 255, 255, .2);
+}
+
+/*.todo li:nth-child(4) {
+    background-color: rgba(255, 255, 255, .2);
+}*/
+
+.inprogress li:nth-child(odd) {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+.done li:nth-child(odd) {
+    background-color: rgba(0, 255, 0, .5);
+}
