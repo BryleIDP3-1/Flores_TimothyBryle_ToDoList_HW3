@@ -23,6 +23,7 @@ Open index.html in the browser of your choice.
 **Created on November 28, 2023**
 
 **Finished on November 30, 2023**
+
 Made for Homework 3
 
 ## Credits :writing_hand:
