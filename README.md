@@ -21,6 +21,7 @@ Open index.html in the browser of your choice.
 ## History :clock8:
 
 **Created on November 28, 2023**
+
 **Finished on November 30, 2023**
 Made for Homework 3
 
