@@ -41,7 +41,7 @@ main {
 
 article {
     width: 279px;
-    height: 520px;
+    height: 500px;
     /* border: 4px solid white; */
     /* border-radius: 8px; */
     /* margin: 10px; */
@@ -51,7 +51,7 @@ article {
 
 article h2 {
     color: black;
-    margin-top: 130px;
+    margin-top: 110px;
     margin-bottom: 30px;
     text-transform: uppercase;
     text-align: center;
@@ -75,7 +75,10 @@ ul li {
    
     background-image: url(../images/1-todo-bg.png);
     background-repeat: no-repeat;
+}
 
+#todo > h2 {
+    color: red;
 }
 
 #inprogress {
@@ -84,23 +87,86 @@ ul li {
     background-repeat: no-repeat;
 }
 
+#inprogress > h2 {
+    color: rgb(201, 174, 0);
+}
+
 #done {
     background-image: url(../images/3-done-bg.png);
     background-repeat: no-repeat;
 }
 
-.todo li:nth-child(odd) { 
-    background-color: rgba(255, 255, 255, .2);
+#done > h2 {
+    color: green;
+}
+
+.todo li:nth-child(even) { 
+    background-color: rgba(254, 211, 211, 0.3);
 }
 
 /*.todo li:nth-child(4) {
     background-color: rgba(255, 255, 255, .2);
 }*/
 
-.inprogress li:nth-child(odd) {
-    background-color: rgba(255, 0, 0, .5);
+.inprogress li:nth-child(even) {
+    background-color: rgba(255, 241, 178, 0.3);
 }
 
-.done li:nth-child(odd) {
-    background-color: rgba(0, 255, 0, .5);
+.done li:nth-child(even) {
+    background-color: rgba(203, 255, 203, 0.3);
 }
+
+/* attribute selector */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="checkbox"]:checked + span::after {
+    content: "\2B50";
+    /* width: 20px;
+    height: 20px; */
+    border-radius: 100%;
+    background-color: rgb(34, 82, 255);
+    /* border: 4px solid #20b320; */
+    font-size: 20px;
+    /* position: relative; */
+    /* top: 1px; */
+    /* right: 8px; */
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* footer > h1 {
+    color: cornflowerblue;
+    /* padding top right bottom left 
+} */
+
+
+footer{
+    text-align: center;
+    height: 80px;
+    background-color: rgb(40,37,37);
+    top: 100%;
+    padding: 30px 0;
+}
+
+
+#footer-instruction {
+    font-size: 14px;
+    color: white;
+}
+
+#footer-instruction > p {
+    color: rgb(157, 160, 163);
+}
+   
+
+#footer-credit {
+    padding: 20px 0;
+    font-size: 10px;
+    color: rgb(138, 138, 138);
+}
+   
